@@ -1,0 +1,409 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Clem · E-portfolio · ENSEEIHT</title>
+  <meta name="description" content="E-portfolio of Clem, engineering student in Electronics, Electrical Engineering and Automation at ENSEEIHT (Toulouse INP).">
+  <meta name="theme-color" content="#1f2340">
+  <script>document.documentElement.className = 'js';</script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="wrap bar">
+    <a class="brand" href="#welcome" aria-label="Clem – home">
+      <span class="brand-mark" aria-hidden="true">C</span>
+      <span class="brand-text">Clem<small>E-portfolio · ENSEEIHT</small></span>
+    </a>
+    <nav class="main-nav" aria-label="Main">
+      <a href="#welcome" data-nav="welcome">Welcome</a>
+      <a href="#engineering" data-nav="engineering">Engineering course</a>
+      <a href="#mobility" data-nav="mobility">International mobility</a>
+      <a href="#civic" data-nav="civic">Sustainability &amp; civic</a>
+      <a href="#sport" data-nav="sport">Sport &amp; activities</a>
+      <a href="#career" data-nav="career">Career development</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main" class="wrap">
+
+  <!-- =========================================================
+       1. WELCOME
+       ========================================================= -->
+  <section class="page" data-page="welcome" aria-labelledby="h-welcome">
+    <div class="hero">
+      <div class="hero-text">
+        <p class="eyebrow">Welcome</p>
+        <h1 id="h-welcome" tabindex="-1">Hi, I’m Clem.</h1>
+        <p class="lead">Engineering student in <strong>Electronics, Electrical Engineering and Automation</strong> at ENSEEIHT (N7, Toulouse INP), originally from Lille.</p>
+        <p>This e-portfolio collects my projects, experiences and reflections over my three years of engineering studies. It is a living document: I update it as I grow.</p>
+        <p class="todo-inline">[TODO – Introductory note: 3–4 sentences in your own words. Who are you, what drives you, what are you looking for? Keep it consistent with your UVP and LinkedIn “About”.]</p>
+        <div class="cta">
+          <a class="btn primary" href="#career/career-project">Career project</a>
+          <a class="btn" href="#engineering/projects">My projects</a>
+        </div>
+      </div>
+      <figure class="portrait">
+        <img src="assets/photo.jpg" alt="Portrait of Clem" width="320" height="400"
+             onerror="this.hidden=true;this.nextElementSibling.hidden=false">
+        <div class="portrait-fallback" hidden aria-hidden="true">C</div>
+        <figcaption class="todo-hint">Add a professional photo: <code>assets/photo.jpg</code> (portrait, 4:5).</figcaption>
+      </figure>
+    </div>
+
+    <h2>Explore</h2>
+    <div class="grid three">
+      <a class="card link" href="#engineering"><h3>Engineering course</h3><p>My background, projects and technical skills.</p></a>
+      <a class="card link" href="#mobility"><h3>International mobility</h3><p>Where I want to go abroad, and why.</p></a>
+      <a class="card link" href="#civic"><h3>Sustainability &amp; civic engagement</h3><p>How I contribute beyond the classroom.</p></a>
+      <a class="card link" href="#sport"><h3>Sport &amp; activities</h3><p>Interests, hobbies and team experiences.</p></a>
+      <a class="card link" href="#career"><h3>Career development</h3><p>CVs, LinkedIn, pitch video, role models, internships.</p></a>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       2. ENGINEERING COURSE
+       ========================================================= -->
+  <section class="page" data-page="engineering" aria-labelledby="h-eng">
+    <p class="eyebrow">Tab 2</p>
+    <h1 id="h-eng" tabindex="-1">Engineering course</h1>
+    <nav class="subnav" aria-label="Engineering course sections">
+      <a href="#engineering/overview" data-sub-link="overview">Background</a>
+      <a href="#engineering/projects" data-sub-link="projects">Projects</a>
+      <a href="#engineering/skills" data-sub-link="skills">Skills</a>
+    </nav>
+
+    <div class="subpage" data-sub="overview">
+      <h2>Academic background</h2>
+      <ol class="timeline">
+        <li>
+          <span class="when">Before 2023</span>
+          <strong>Lycée Sainte Marie – Beaucamps-Ligny</strong>
+          <span>Secondary school (Lille area).</span>
+        </li>
+        <li>
+          <span class="when">2023 – 2026</span>
+          <strong>Classes préparatoires – Lycée Faidherbe, Lille</strong>
+          <span>PC* track (Physics &amp; Chemistry): intensive training in mathematics, physics and chemistry, preparing the competitive entrance exams to the “grandes écoles”.</span>
+        </li>
+        <li class="now">
+          <span class="when">2026 – today</span>
+          <strong>ENSEEIHT (N7) – Toulouse INP</strong>
+          <span>Engineering degree, Electronics, Electrical Engineering and Automation (3EA). Currently in L3 (semester 5).</span>
+        </li>
+      </ol>
+      <p class="todo-inline">[TODO – Add 2–3 lines on why you chose N7 and this specialisation, and what the courses of this semester bring you.]</p>
+    </div>
+
+    <div class="subpage" data-sub="projects">
+      <h2>Projects &amp; productions</h2>
+      <p>Each project follows the same structure: <em>context, my role, methods, outcome, lessons learned</em>.</p>
+
+      <article class="card project">
+        <header>
+          <h3>Snake 2000 – console game in C</h3>
+          <p class="meta"><span class="tag">In progress</span><span class="tag">C</span><span class="tag">Algorithms</span><span class="tag">Modular programming</span></p>
+        </header>
+        <dl>
+          <dt>Context</dt>
+          <dd>University programming project: develop a classic Snake game running in the console, using a provided helper library (<code>myLib</code>) and a modular structure split into sub-programs (<code>SP_*</code>).</dd>
+          <dt>My role</dt>
+          <dd>Developing the game logic, in particular the snake head movement (<code>SP_MOVE_TETE</code>) and the keyboard handling (<code>SP_Gestion_Clavier</code>, non-blocking input with <code>kbhit</code> / <code>getkey</code>).</dd>
+          <dt>What it includes</dt>
+          <dd>Main menu (play / options / quit); configurable options: colours of the field, walls and snake, field height and width, game speed.</dd>
+          <dt>Methods &amp; tools</dt>
+          <dd>C, header files (<code>myLib.h</code>, <code>mesTypes.h</code>, <code>SP_options.h</code>, <code>SP_jeu.h</code>), game loop, structured sub-programs.</dd>
+          <dt>Outcome &amp; lessons</dt>
+          <dd class="todo-inline">[TODO – Final result, what worked, what you would do differently, what you learned (STAR method: Situation, Task, Action, Result, And beyond?). Add a link to the code if the repository is public.]</dd>
+        </dl>
+      </article>
+
+      <div class="todo">
+        <strong>TODO – Add a project</strong>
+        <p>Copy the <code>&lt;article class="card project"&gt;…&lt;/article&gt;</code> block above and fill it in. Good candidates: lab work (electronics, automation, power electronics), personal projects, prépa TIPE. Add schematics, plots, code snippets or a short video: the portfolio should <em>show</em> how you apply your skills.</p>
+      </div>
+    </div>
+
+    <div class="subpage" data-sub="skills">
+      <h2>Skills</h2>
+      <div class="grid two">
+        <div class="card">
+          <h3>Technical skills</h3>
+          <ul class="chips">
+            <li>C programming</li>
+            <li>Mathematics (university level)</li>
+            <li class="todo-chip">+ Python / MATLAB / VHDL …</li>
+            <li class="todo-chip">+ Electronics / Power / Control …</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Soft skills</h3>
+          <ul class="chips">
+            <li class="todo-chip">+ Teamwork</li>
+            <li class="todo-chip">+ Problem solving</li>
+            <li class="todo-chip">+ Communication</li>
+          </ul>
+        </div>
+      </div>
+      <p class="todo-hint">Back each skill with evidence (a project, an internship, an achievement), not just a keyword. Reuse the same keywords as in your CV and LinkedIn.</p>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       3. INTERNATIONAL MOBILITY
+       ========================================================= -->
+  <section class="page" data-page="mobility" aria-labelledby="h-mob">
+    <p class="eyebrow">Tab 3</p>
+    <h1 id="h-mob" tabindex="-1">International mobility</h1>
+    <nav class="subnav" aria-label="International mobility sections">
+      <a href="#mobility/overview" data-sub-link="overview">Overview</a>
+      <a href="#mobility/pce" data-sub-link="pce">PCE</a>
+      <a href="#mobility/lv2" data-sub-link="lv2">LV2</a>
+    </nav>
+
+    <div class="subpage" data-sub="overview">
+      <h2>My mobility plans</h2>
+      <p>The engineering degree includes a <strong>17-week international mobility in semester 9</strong>. I have identified three potential projects, each aligned with one of my role models.</p>
+      <div class="grid three">
+        <a class="card link" href="#career/career-project"><p class="eyebrow">Plan A</p><h3 class="todo-inline">[Destination]</h3><p>See details in the Career project section.</p></a>
+        <a class="card link" href="#career/career-project"><p class="eyebrow">Plan B</p><h3 class="todo-inline">[Destination]</h3><p>See details in the Career project section.</p></a>
+        <a class="card link" href="#career/career-project"><p class="eyebrow">Plan C</p><h3 class="todo-inline">[Destination]</h3><p>See details in the Career project section.</p></a>
+      </div>
+      <p class="todo-hint">The three plans are described once, in <em>Career development → Career project</em>. Keep the destinations here in sync.</p>
+    </div>
+
+    <div class="subpage" data-sub="pce">
+      <h2>PCE</h2>
+      <div class="todo"><strong>TODO</strong><p>Describe this experience as it is defined in your curriculum: what you did, where, what you learned, how it changed your view of working abroad.</p></div>
+    </div>
+
+    <div class="subpage" data-sub="lv2">
+      <h2>LV2 – second foreign language</h2>
+      <div class="todo"><strong>TODO</strong><p>Which language, current level, how you practise, and how it connects to your mobility plans. English target for graduation: B2+.</p></div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       4. SUSTAINABILITY & CIVIC ENGAGEMENT
+       ========================================================= -->
+  <section class="page" data-page="civic" aria-labelledby="h-civic">
+    <p class="eyebrow">Tab 4</p>
+    <h1 id="h-civic" tabindex="-1">Sustainability &amp; civic engagement</h1>
+    <p class="lead">Engineering is also about the society we build for.</p>
+    <div class="todo">
+      <strong>TODO – Your engagement</strong>
+      <p>Describe the action(s) you are involved in (association, student project, volunteering…): what, when, how many hours, with whom, what impact, what it taught you. The curriculum expects <strong>40 hours of civic engagement</strong> to be completed by semester 9, so log your hours here as you go.</p>
+    </div>
+    <div class="grid two">
+      <div class="card"><h3 class="todo-inline">[Action 1]</h3><p class="todo-inline">[Role · period · hours · impact]</p></div>
+      <div class="card"><h3 class="todo-inline">[Action 2]</h3><p class="todo-inline">[Role · period · hours · impact]</p></div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       5. SPORT & OTHER ACTIVITIES
+       ========================================================= -->
+  <section class="page" data-page="sport" aria-labelledby="h-sport">
+    <p class="eyebrow">Tab 5</p>
+    <h1 id="h-sport" tabindex="-1">Sport &amp; other activities</h1>
+    <p class="lead">What I do outside the lab says as much about me as what I do inside it.</p>
+    <div class="todo">
+      <strong>TODO – Interests &amp; hobbies</strong>
+      <p>List your sports, associations, music, creative or other activities. For each one, add one sentence on what it brings you (teamwork, discipline, creativity…) so a recruiter can connect it to your brand.</p>
+    </div>
+    <div class="grid three">
+      <div class="card"><h3 class="todo-inline">[Activity]</h3><p class="todo-inline">[What it brings me]</p></div>
+      <div class="card"><h3 class="todo-inline">[Activity]</h3><p class="todo-inline">[What it brings me]</p></div>
+      <div class="card"><h3 class="todo-inline">[Activity]</h3><p class="todo-inline">[What it brings me]</p></div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       6. CAREER DEVELOPMENT
+       ========================================================= -->
+  <section class="page" data-page="career" aria-labelledby="h-career">
+    <p class="eyebrow">Tab 6</p>
+    <h1 id="h-career" tabindex="-1">Career development</h1>
+    <nav class="subnav" aria-label="Career development sections">
+      <a href="#career/career-project" data-sub-link="career-project">Career project</a>
+      <a href="#career/internships" data-sub-link="internships">Internships</a>
+      <a href="#career/pep" data-sub-link="pep">PEP</a>
+    </nav>
+
+    <!-- ---------- CAREER PROJECT (evaluated deliverable) ---------- -->
+    <div class="subpage" data-sub="career-project">
+      <h2>Career project</h2>
+      <p class="lead">Who I am as a professional, where I want to go, and who inspires me to get there.</p>
+
+      <nav class="toc" aria-label="On this page">
+        <a href="#cp-brand">Personal brand</a>
+        <a href="#cp-cv">CVs</a>
+        <a href="#cp-linkedin">LinkedIn</a>
+        <a href="#cp-pitch">Pitch video</a>
+        <a href="#cp-roles">Role models</a>
+        <a href="#cp-mobility">Mobility projects</a>
+      </nav>
+
+      <section id="cp-brand" class="block">
+        <h3>Personal brand &amp; unique value proposition</h3>
+        <div class="grid three">
+          <div class="card"><p class="eyebrow">My product</p><p class="todo-inline">[Skills, training and experience that make you employable]</p></div>
+          <div class="card"><p class="eyebrow">My brand in 3 words</p><p class="todo-inline">[word · word · word]</p></div>
+          <div class="card"><p class="eyebrow">My UVP</p><p class="todo-inline">[What makes you different from other candidates, in one or two sentences]</p></div>
+        </div>
+        <p class="todo-hint">Your UVP, CV, LinkedIn and pitch video must tell the same story: this alignment is assessed.</p>
+      </section>
+
+      <section id="cp-cv" class="block">
+        <h3>Curriculum vitae</h3>
+        <div class="downloads">
+          <a class="btn" href="assets/cv-en.pdf" download>CV in English (PDF)</a>
+          <a class="btn" href="assets/cv-fr.pdf" download>CV en français (PDF)</a>
+        </div>
+        <p class="todo-hint">Put your files in <code>assets/</code> named <code>cv-en.pdf</code> and <code>cv-fr.pdf</code>. One page, evidence-based, STAR method for experiences, keywords from the jobs you target.</p>
+      </section>
+
+      <section id="cp-linkedin" class="block">
+        <h3>LinkedIn <span class="tag">optional, recommended</span></h3>
+        <div class="downloads">
+          <a class="btn" href="https://www.linkedin.com/in/YOUR-PROFILE/" target="_blank" rel="noopener noreferrer">LinkedIn profile (English)</a>
+          <a class="btn" href="https://www.linkedin.com/in/YOUR-PROFILE/?locale=fr_FR" target="_blank" rel="noopener noreferrer">Profil LinkedIn (français)</a>
+        </div>
+        <p class="todo-hint">Replace <code>YOUR-PROFILE</code> with your LinkedIn address in these two links (search for it in <code>index.html</code>). Add the French version of your profile in LinkedIn’s language settings.</p>
+      </section>
+
+      <section id="cp-pitch" class="block">
+        <h3>Elevator pitch – unique value proposition</h3>
+        <p>A 2–3 minute pitch in English: <strong>now</strong>, a very brief <strong>past</strong>, and my <strong>future</strong>.</p>
+        <div class="video">
+          <video controls preload="none" playsinline poster="assets/pitch-poster.jpg">
+            <source src="assets/pitch.mp4" type="video/mp4">
+            Your browser cannot play this video. <a href="assets/pitch.mp4">Download it</a>.
+          </video>
+        </div>
+        <p class="todo-hint">Add your video as <code>assets/pitch.mp4</code> (compressed, under 100 MB, 2–3 min, not read from a script) and optionally a poster image <code>assets/pitch-poster.jpg</code>.</p>
+
+        <div class="grid three">
+          <div class="card"><p class="eyebrow">Now</p><p class="todo-inline">[Who are you? What are you studying?]</p></div>
+          <div class="card"><p class="eyebrow">Past (brief)</p><p class="todo-inline">[Which experiences led you to N7?]</p></div>
+          <div class="card"><p class="eyebrow">Future</p><p class="todo-inline">[Near, mid and distant plans: 3 role models, 3 mobility projects, plans A/B/C]</p></div>
+        </div>
+      </section>
+
+      <section id="cp-roles" class="block">
+        <h3>Three role models</h3>
+        <p>Profiles I analysed through MyJobGlasses, alumni interviews and other research, to understand what the jobs I aim for really involve.</p>
+        <div class="grid three">
+
+          <article class="card role">
+            <p class="eyebrow">Role model 1</p>
+            <h4 class="todo-inline">[Name or anonymised profile]</h4>
+            <dl>
+              <dt>Current role</dt><dd class="todo-inline">[Job title · company · country]</dd>
+              <dt>Source</dt><dd class="todo-inline">[MyJobGlasses / alumni interview / other]</dd>
+              <dt>Career path</dt><dd class="todo-inline">[Key steps, studies, first jobs]</dd>
+              <dt>Skills that matter</dt><dd class="todo-inline">[Technical + soft skills they mention]</dd>
+              <dt>What I take from it</dt><dd class="todo-inline">[What this changes in my plans]</dd>
+              <dt>Aligned mobility</dt><dd><a href="#cp-mobility">Plan A</a></dd>
+            </dl>
+          </article>
+
+          <article class="card role">
+            <p class="eyebrow">Role model 2</p>
+            <h4 class="todo-inline">[Name or anonymised profile]</h4>
+            <dl>
+              <dt>Current role</dt><dd class="todo-inline">[Job title · company · country]</dd>
+              <dt>Source</dt><dd class="todo-inline">[MyJobGlasses / alumni interview / other]</dd>
+              <dt>Career path</dt><dd class="todo-inline">[Key steps, studies, first jobs]</dd>
+              <dt>Skills that matter</dt><dd class="todo-inline">[Technical + soft skills they mention]</dd>
+              <dt>What I take from it</dt><dd class="todo-inline">[What this changes in my plans]</dd>
+              <dt>Aligned mobility</dt><dd><a href="#cp-mobility">Plan B</a></dd>
+            </dl>
+          </article>
+
+          <article class="card role">
+            <p class="eyebrow">Role model 3</p>
+            <h4 class="todo-inline">[Name or anonymised profile]</h4>
+            <dl>
+              <dt>Current role</dt><dd class="todo-inline">[Job title · company · country]</dd>
+              <dt>Source</dt><dd class="todo-inline">[MyJobGlasses / alumni interview / other]</dd>
+              <dt>Career path</dt><dd class="todo-inline">[Key steps, studies, first jobs]</dd>
+              <dt>Skills that matter</dt><dd class="todo-inline">[Technical + soft skills they mention]</dd>
+              <dt>What I take from it</dt><dd class="todo-inline">[What this changes in my plans]</dd>
+              <dt>Aligned mobility</dt><dd><a href="#cp-mobility">Plan C</a></dd>
+            </dl>
+          </article>
+        </div>
+        <p class="todo-hint">Real people: ask for their agreement before publishing a name, a photo or a quote. Otherwise anonymise (“Power systems engineer, energy sector, Germany”).</p>
+      </section>
+
+      <section id="cp-mobility" class="block">
+        <h3>Three potential international mobility projects</h3>
+        <p>Each project is aligned with one of my role models.</p>
+        <div class="grid three">
+
+          <article class="card mobility">
+            <p class="eyebrow">Plan A</p>
+            <h4 class="todo-inline">[Country · city]</h4>
+            <dl>
+              <dt>Type</dt><dd class="todo-inline">[Internship / study / research / other · 17 weeks, semester 9]</dd>
+              <dt>Host</dt><dd class="todo-inline">[Company / lab / university]</dd>
+              <dt>Why</dt><dd class="todo-inline">[Skills to gain, link with career goal]</dd>
+              <dt>Aligned role model</dt><dd>Role model 1</dd>
+            </dl>
+          </article>
+
+          <article class="card mobility">
+            <p class="eyebrow">Plan B</p>
+            <h4 class="todo-inline">[Country · city]</h4>
+            <dl>
+              <dt>Type</dt><dd class="todo-inline">[Internship / study / research / other · 17 weeks, semester 9]</dd>
+              <dt>Host</dt><dd class="todo-inline">[Company / lab / university]</dd>
+              <dt>Why</dt><dd class="todo-inline">[Skills to gain, link with career goal]</dd>
+              <dt>Aligned role model</dt><dd>Role model 2</dd>
+            </dl>
+          </article>
+
+          <article class="card mobility">
+            <p class="eyebrow">Plan C</p>
+            <h4 class="todo-inline">[Country · city]</h4>
+            <dl>
+              <dt>Type</dt><dd class="todo-inline">[Internship / study / research / other · 17 weeks, semester 9]</dd>
+              <dt>Host</dt><dd class="todo-inline">[Company / lab / university]</dd>
+              <dt>Why</dt><dd class="todo-inline">[Skills to gain, link with career goal]</dd>
+              <dt>Aligned role model</dt><dd>Role model 3</dd>
+            </dl>
+          </article>
+        </div>
+      </section>
+    </div>
+
+    <div class="subpage" data-sub="internships">
+      <h2>Internships</h2>
+      <p>Internships are planned in semesters 6 and 8.</p>
+      <div class="todo"><strong>TODO</strong><p>For each internship, add a card: company, dates, mission, and a STAR-style summary (Situation, Task, Action, Result, And beyond?) with figures where possible.</p></div>
+    </div>
+
+    <div class="subpage" data-sub="pep">
+      <h2>PEP – professional project</h2>
+      <div class="todo"><strong>TODO</strong><p>Summarise your professional project as it evolves from semester to semester, and the feedback you receive from your jury, tutors and recommenders.</p></div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>© <span id="year">2026</span> Clem · E-portfolio, ENSEEIHT (Toulouse INP).</p>
+    <p class="small">This site uses no cookies, no analytics and no third-party scripts or fonts.</p>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

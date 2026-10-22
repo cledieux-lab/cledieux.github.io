@@ -1,0 +1,2 @@
+Mets ici tes fichiers (voir README.md) :
+  photo.jpg, cv-en.pdf, cv-fr.pdf, pitch.mp4, pitch-poster.jpg
